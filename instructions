@@ -1,0 +1,21 @@
+To Crack root password :
+
+Reboot Linux OS
+
+Scroll down and select "Recovery mode" line
+
+in next page  go to line which is starting from linux word and at the end write rd.break and press ctrl + X
+
+then in next terminal
+click
+mount -o remount,rw /sysroot
+chroot /sysroot
+passwd root
+touch/.autorelabel
+exit
+exit
+
+
+OS will reboot
+
+then login with your credintials
